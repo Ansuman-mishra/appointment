@@ -2,10 +2,9 @@
 import { Scheduler } from "devextreme-react";
 import { SchedulerTypes } from "devextreme-react/cjs/scheduler";
 import React, { useEffect, useState } from "react";
-import * as AspNetData from "devextreme-aspnet-data-nojquery";
 import axios from "axios";
 export const Calender = () => {
-    const url = "http://localhost:5000/api/appointments";
+    const url = "https://appoinmentbackend-production.up.railway.app/api/appointments";
     const [dataSource, setDataSource] = useState([]);
 
     useEffect(() => {
