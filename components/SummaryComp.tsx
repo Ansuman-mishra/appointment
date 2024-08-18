@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { format, isSameDay, isSameMonth, parseISO } from "date-fns";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 const SummaryComp = () => {
-    const url = "http://localhost:5000/api/appointments";
+    const url = "https://appoinmentbackend-production.up.railway.app/api/appointments";
     const [filteredAppointments, setFilteredAppointments] = useState([]);
     const [filter, setFilter] = useState("all");
 
